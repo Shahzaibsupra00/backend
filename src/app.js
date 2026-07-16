@@ -6,8 +6,7 @@ const cookieParser = require("cookie-parser");
 app.use(express.json());
 app.use(
   cors({
-    origin: "*", // Allow requests from any origin
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    origin: "http://localhost:5173", // Allow requests from the frontend origin
     credentials: true, // Allow cookies to be sent
   }),
 );
